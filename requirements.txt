@@ -1,0 +1,7 @@
+streamlit==1.32.0
+pandas
+numpy
+joblib==1.4.2
+biopython==1.85
+plotly==5.22.0
+catboost==1.2.8

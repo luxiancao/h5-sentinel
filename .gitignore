@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+venv/
+.venv/
+
+# Large data files (not needed for deployment)
+*.csv
+*.fas
+*.fasta
+*.zip
+*.ai
+
+# PDF/image files (optional, reduce repo size)
+*.pdf
+*.png
+*.jpg
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Catboost training artifacts
+catboost_info/
+
+# SMOTE outputs
+SMOTE/
+
+# Cache files (except model pkl files)
+cache_parsed_mutations.pkl
+mutation_freq_matrix.csv
+ID_Year.csv
+
+# Keep model pkl files (tracked by git)
+!model_optimization_baseline/best_model_CatBoost.pkl
+!cache_results/boruta_cols_Knowledge-Guided_Signatures.pkl
+!cache_results/best_model_CatBoost_HA.pkl
+!cache_results/best_model_CatBoost_PB2.pkl
+!cache_results/features_HA.pkl
+!cache_results/features_PB2.pkl
