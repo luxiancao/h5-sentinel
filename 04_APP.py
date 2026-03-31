@@ -542,7 +542,7 @@ if st.button("Execute Batch Prediction", type="primary"):
                             ))
                             # Expanded top/bottom margins and total height to securely encompass the title and gauge boundaries
                             fig.update_layout(height=320, margin=dict(l=30, r=30, t=65, b=30), font=dict(family="Arial"))
-                            st.plotly_chart(fig, use_container_width=True)
+                            st.plotly_chart(fig, use_container_width=True, key=f"mars_gauge_{i}")
                             
                         with col2:
                             st.markdown(f"#### Pathogenic Assessment: <span style='color:{data['color']}; font-weight:bold'>{data['tier']}</span>", unsafe_allow_html=True)
